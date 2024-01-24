@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,intial-scale=1">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="coffee.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="logo1.jpg" class="logo">
+                <nav >
+                    <ul id="sidemenu">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#product">Products</a></li>
+                        <div class="side"><i class='bx bxs-x-circle' style='color:#ffae00' onclick="closemenu()"></i></div>
+                    </ul>
+                </nav>
+                <a href="#offer" class="off"><i class='bx bxs-offer bx-burst' style='color:#ffae00'  >OFFER</i></a>
+                <div class="side"><i class='bx bx-dots-vertical-rounded' style='color:#ffae00' onclick="openmenu()"></i></div>
+            </div>
+            
+            <div class="content" id="Home">
+              <span></span>
+              <span></span>
+              <span></span>
+                <span></span>
+                <a href=""></a>
+                <h1>ENJOY <br>YOUR</h1>
+                <p> Coffee</p>
+                <button class="btn">
+                    <i class='bx bxs-coffee-alt bx-tada' ></i> Buy Now
+                </button>
+            </div>
+        </div>
+
+
+        <section class="about" id="About">
+            <div class="content1">
+              <img src="about2.jpg">
+              <div class="text">
+                <h2>About Us</h2>
+                <h5>What makes our coffee special?</h5>
+                <p>
+                  Welcome to a coffee experience like no other. Our commitment to excellence starts with sourcing the finest, ethically grown beans from around the world. Meticulously roasted to perfection, each cup is a journey through rich and nuanced flavors. What sets our coffee apart is more than just quality control and sustainability – it's the sense of community we've fostered among coffee enthusiasts. Join us in savoring moments of connection, where every sip embodies the passion, precision, and unparalleled quality that define our commitment to extraordinary coffee.
+                </p>
+                <button class="btn">Learn More</button>
+              </div>
+            </div>
+            
+        </section>
+        <h3 id="product">PRODUCTS</h3>
+        <section class="products" >
+          
+          <div class="container3">
+            <div class="card">
+              <div class="cimg">
+                <img src="1.jpg">
+              </div>
+              <div class="detail">
+                <h4>Coffee 1</h4>
+                <p>
+                  Indulge in the smooth and velvety taste of our signature blend.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cimg">
+                <img src="2.jpg">
+              </div>
+              <div class="detail">
+                <h4>Coffee 2</h4>
+                <p>
+                  Experience the bold and robust flavors of our dark roast coffee.
+                </p>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="cimg">
+                <img src="3.jpg">
+              </div>
+              <div class="detail">
+                <h4>Coffee 3</h4>
+                <p>
+                  Enjoy the delightful and aromatic notes of our medium roast coffee.
+              </div>
+            </div>
+          </div>
+        </section>
+        <h3 id="offer" >OFFERS</h3>
+       
+        <p class="p1">30% OFF <br> FOR THIS MONTH</p>
+        <section class="offer" id="offer" >
+          <div class="container4">
+            
+            <div class="cards">
+              <div class="front">
+                <img src="1.jpg">
+                <p class="p">Coffee 1</p>
+              </div>
+              <div class="back">
+                <h1> Coffee 1</h1>
+                <p>Indulge in the smooth and velvety taste of our signature blend.</p>
+              </div>
+            </div>
+            <p class="p">+</p>
+
+            <div class="cards">
+              <div class="front">
+                <img src="offer.jpg">
+                <p class="p">Pastry</p>
+              </div>
+              <div class="back">
+                <h1> Pastry</h1>
+                <p>A sweet, multilayered pastry made from laminated dough, filled with cream cheese.</p>
+              </div>
+
+            </div>
+            
+
+          </div>
+        </section>
+        <p class="p1"><button class="btn2">
+          <i class='bx bxs-coffee-alt bx-tada' ></i> Buy Now
+        </button></p>
+
+        <hr />
+    <footer>
+      <div class="container2">
+        <h1 class="heading-info">Email  <span><i class='bx bxs-envelope bx-tada' ></i></span></h1>
+        <p>
+          abc@gmail.com
+        </p>
+      </div>
+      <div class="container2">
+        <h1 class="heading-info">Contact <span>Us</span></h1>
+        <p>
+          <i class='bx bxs-map bx-tada' style='color:#ffae00' ></i>  Pune,411049<br>
+          <i class='bx bxs-phone bx-tada' style='color:#ffae00' ></i>  1010101010
+        </p>
+        <div class="contact-icons">
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+      </div>
+      </div>
+      <div class="container2">
+        <h1 class="heading-info">Quick <span>Link</span></h1>
+        
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#product">Products</a></li>
+                        <li><a href="#offer">Offers</a></li>
+        
+      </div>
+    </footer>
+    
+
+    <p class="para">
+      Copyright @ 2024  | Provided by <span>Piyush Shah</span>
+    </p>
+
+    <script>
+      var sidemenu= document.getElementById("sidemenu");
+
+      function openmenu(){
+          sidemenu.style.right = "0";
+      }
+
+      function closemenu(){
+          sidemenu.style.right = "-200px";
+      }
+
+  </script>
+    </body>
+</html>
